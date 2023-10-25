@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-// import { Inter, Montserrat } from "next/font/google";
 
 import Header from "@/components/header/Header";
 
 import Language from "@/components/language/Language";
 
 import "./globals.css";
-
-// const inter = Inter({ subsets: ["latin"] });
-// const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,9 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-      // className={`${inter.className} ${}`}
-      >
+      <body style={{ background: `var(--background-gradient)` }}>
         <Header />
         {children}
         <Language />

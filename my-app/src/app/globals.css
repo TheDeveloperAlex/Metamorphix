@@ -11,6 +11,20 @@
   src: url("/fonts/tacticSans/TacticSansExd-BldIt.otf") format("opentype");
 }
 
+:root {
+  --white-opacity-07: rgba(255, 255, 255, 0.7);
+  --red-header: #ff1d1d;
+  --red-footer: #740000;
+  --black-opacity-02: rgba(255, 255, 255, 0.2);
+  --red-switch: #bd0000;
+  --background-gradient: linear-gradient(
+    90deg,
+    #000 0.15%,
+    rgba(0, 0, 0, 0.73) 195.88%,
+    #0b0005 195.9%
+  );
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
