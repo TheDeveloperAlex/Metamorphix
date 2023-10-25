@@ -1,5 +1,5 @@
 import PostCard from "@/components/PostCard";
-import { metamorphixPost } from "./posts";
+import posts from "../../../posts";
 import Footer from "@/components/footer/Footer";
 
 export default function News() {
@@ -13,8 +13,7 @@ export default function News() {
         </span>
       </h1>
       <div className="grid grid-cols-2 gap-[54px] mt-5" style={{gridTemplateRows: "450px"}}>
-        <PostCard {...metamorphixPost} />
-        <PostCard {...metamorphixPost} />
+        {posts.map(elem=><PostCard key={elem.slug} {...elem} />)}
       </div>
       <Footer />
     </div>
