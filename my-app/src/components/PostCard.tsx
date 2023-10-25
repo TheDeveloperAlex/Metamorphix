@@ -1,14 +1,8 @@
 import Image from "next/image"
 import { Skeleton } from "./ui/skeleton"
 import { Button } from "./ui/button"
-
-interface PostCardProps{
-    image: string,
-    date: Date,
-    description: string,
-    slug: string,
-    title: string,
-};
+import Link from "next/link"
+import { Post } from "../../posts"
 
 export default function PostCard({
     date,
@@ -16,7 +10,7 @@ export default function PostCard({
     image,
     title,
     slug
-}: PostCardProps){
+}: Post){
     
     return(
         <div className="w-[323px] bg-dark-red-card text-white-opacity-02 rounded-lg flex flex-col">
@@ -34,9 +28,11 @@ export default function PostCard({
                 <p className="overflow-clip shrink max-h-[120px]">
                     {description}
                 </p>
-                <Button variant='red-hover' className="self-center px-5 mt-auto">
-                    Подробнее..
-                </Button>
+                <Link href={`news/${slug}`} className="mt-auto self-center ">
+                    <Button variant='red-hover' className="px-5">
+                        Подробнее..
+                    </Button>
+                </Link>
             </div>
         </div>
     )
