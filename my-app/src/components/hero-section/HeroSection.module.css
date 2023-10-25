@@ -1,0 +1,13 @@
+.title {
+	font-size: 62px;
+	text-transform: uppercase;
+}
+.title span {
+	color: #BF1700;
+	font-size: 76px;
+}
+.shape {
+	position: absolute;
+	left: -20px;
+	top: -13px;
+}

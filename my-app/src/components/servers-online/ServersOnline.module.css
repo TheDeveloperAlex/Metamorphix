@@ -1,0 +1,16 @@
+.online {
+	display: flex;
+	align-items: center;
+}
+.online h3 {
+	padding-left: 12px;
+}
+
+.onlineCount {
+	color: #656565;
+	text-transform: uppercase;
+}
+.onlineCount span {
+	color: #fff;
+	font-family: "TacticSansExd-BldIt", sans-serif;
+}

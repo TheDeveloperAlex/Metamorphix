@@ -1,0 +1,23 @@
+.activitySection {
+	margin-top: 55px;
+}
+
+.activitySectionHeader {
+	display: flex;
+	align-items: center;
+}
+
+.activityTitle {
+	font-size: 20px;
+}
+.activityTitle span {
+	color: var(--red-switch);
+}
+
+.activitySwitch {
+	background-color: rgb(162, 162, 162);
+	margin-left: 25px;
+}
+.activitySwitch[data-state='checked'] {
+	background-color: var(--red-switch);
+}
