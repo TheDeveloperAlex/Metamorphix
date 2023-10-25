@@ -1,0 +1,27 @@
+.online {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+
+	background-color: #2C8D2A;
+
+	box-shadow: rgb(87, 255, 87) 0 0 20px;
+}
+
+.online > span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background-color: #04ff00;
+	animation: animation 2s infinite;
+}
+
+@keyframes animation {
+	50% {
+		background-color: #3fc53c;
+	}
+}

@@ -1,0 +1,53 @@
+.main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: "TacticSans-Bld", sans-serif;
+
+	min-height: 90vh;
+
+	padding: 0 6rem;
+}
+
+.right img {
+	width: 100%;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+}
+.shape {
+	position: absolute;
+	left: -20px;
+	top: -13px;
+}
+.title {
+	font-size: 62px;
+	text-transform: uppercase;
+}
+.title span {
+	color: #BF1700;
+	font-size: 76px;
+}
+
+
+.online {
+	display: flex;
+	align-items: center;
+}
+.online h3 {
+	padding-left: 12px;
+}
+
+.onlineCount {
+	color: #656565;
+	text-transform: uppercase;
+}
+.onlineCount span {
+	color: #fff;
+	font-family: "TacticSansExd-BldIt", sans-serif;
+}

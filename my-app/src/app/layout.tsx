@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ background: `var(--background-gradient)` }}>
+      <body style={{ background: `var(--background-gradient)`, color: "#fff" }}>
         <Header />
         {children}
         <Language />

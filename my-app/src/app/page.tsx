@@ -1,16 +1,21 @@
-import Image from "next/image";
+import { OnlineIcon } from "@/components/online-icon/OnlineIcon";
+import classes from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Page
-      <div style={{ fontFamily: "Gilroy, sans-serif" }}>Gilroy</div>
-      <div style={{ fontFamily: "Montserrat, sans-serif" }}>Gilroy</div>
-      <div style={{ fontFamily: "TacticSans-Bld, sans-serif" }}>
-        TacticSans-Bld
+    <main className={classes.main}>
+      <div className={classes.left}>
+        <img src="/home-page/shape.svg" alt="shape" className={classes.shape} />
+        <h1 className={classes.title}><span>Metamorphix</span> Нетворкинг <span>в</span> твоем кармане</h1>
+
+        <div className={classes.online}>
+          <OnlineIcon />
+          <h3 className={classes.onlineCount}>онлайн серверов: <span>29 100</span></h3>
+        </div>
       </div>
-      <div style={{ fontFamily: "TacticSansExd-BldIt, sans-serif" }}>
-        TacticSansExd-BldIt
+      <div className={classes.right}>
+        {/* drochu nogami (tut nado picture) */}
+        <img src="/home-page/test.svg" alt="" />
       </div>
     </main>
   );
