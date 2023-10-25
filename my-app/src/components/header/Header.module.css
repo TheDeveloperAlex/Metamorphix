@@ -12,6 +12,10 @@
 .nav a {
 	position: relative;
 	margin-left: 30px;
+	color: var(--black-opacity-02);
+}
+.nav a:hover {
+	color: #fff;
 }
 .nav a:hover:after {
 	width: 100%;
@@ -19,7 +23,7 @@
 .nav a::after {
 	content: '';
 	display: inline-block;
-	background-color: red;
+	background-color: var(--red-header);
 	
 	transition: .3s ease-in-out;
 
@@ -32,4 +36,7 @@
 }
 .nav a:first-child {
 	margin: 0;
+}
+a.active {
+	color: #fff;
 }
