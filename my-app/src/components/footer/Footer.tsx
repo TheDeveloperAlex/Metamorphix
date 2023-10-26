@@ -17,13 +17,26 @@ export default function Footer() {
           тебе комфортную работу в каждой из сфер
         </p>
         {socialLinks.map((elem) => (
-          <Link href="#" key={elem.text} className={buttonVariants({variant: "outline", className: "pl-2 pr-3 gap-[9px] !text-[10px] items-center"})}>
-              {elem.icon}
-              {elem.text}
+          <Link
+            href="#"
+            key={elem.text}
+            className={buttonVariants({
+              variant: "outline",
+              className: "pl-2 pr-3 gap-[9px] !text-[10px] items-center",
+            })}
+          >
+            {elem.icon}
+            {elem.text}
           </Link>
         ))}
-        <Link href="#" className={buttonVariants({variant: "outline", className: "px-4 gap-[9px] !text-[13px] items-center"})}>
-            ПРО НАС
+        <Link
+          href="#"
+          className={buttonVariants({
+            variant: "outline",
+            className: "px-4 gap-[9px] !text-[13px] items-center",
+          })}
+        >
+          ПРО НАС
         </Link>
       </div>
       <div className="w-[1140px] min-h-[171px] grid grid-cols-3 text-[12px] text-[#DEDEDE]">

@@ -26,7 +26,10 @@ export default function PostCard({
         <p className="overflow-clip shrink max-h-[120px]">{description}</p>
         <Link
           href={`news/${slug}`}
-          className={buttonVariants({ variant: "red-hover", className: "mt-auto self-center px-5 !text-[12px]" })}
+          className={buttonVariants({
+            variant: "red-hover",
+            className: "mt-auto self-center px-5 !text-[12px]",
+          })}
         >
           Подробнее...
         </Link>
