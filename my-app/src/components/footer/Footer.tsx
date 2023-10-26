@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { links, socialLinks } from "./links";
@@ -17,23 +17,13 @@ export default function Footer() {
           тебе комфортную работу в каждой из сфер
         </p>
         {socialLinks.map((elem) => (
-          <Link href="#" key={elem.text}>
-            <Button
-              className="pl-2 pr-3 gap-[9px] text-[10px] items-center"
-              variant="outline"
-            >
+          <Link href="#" key={elem.text} className={buttonVariants({variant: "outline", className: "pl-2 pr-3 gap-[9px] !text-[10px] items-center"})}>
               {elem.icon}
               {elem.text}
-            </Button>
           </Link>
         ))}
-        <Link href="#">
-          <Button
-            className="px-4 gap-[9px] text-[13px] items-center"
-            variant="outline"
-          >
+        <Link href="#" className={buttonVariants({variant: "outline", className: "px-4 gap-[9px] !text-[13px] items-center"})}>
             ПРО НАС
-          </Button>
         </Link>
       </div>
       <div className="w-[1140px] min-h-[171px] grid grid-cols-3 text-[12px] text-[#DEDEDE]">
