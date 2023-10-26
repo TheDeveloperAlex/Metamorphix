@@ -54,7 +54,12 @@ module.exports = {
         "red-header": "#ff1d1d",
         "red-footer": "#740000",
         "red-switch": "#bd0000",
-        "black-opacity-02": "rgba(255, 255, 255, 0.2)",
+        "white-opacity-02": "rgba(255, 255, 255, 0.2)",
+        "dark-red-card": "#140A09",
+        "red": "rgba(255, 0, 0)",
+        "button-red": "#BE0000",
+        "border-footer": "rgba(217, 217, 217, 0.10)"
+        
       },
       borderRadius: {
         lg: "var(--radius)",
