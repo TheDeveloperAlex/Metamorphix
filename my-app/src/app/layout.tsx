@@ -17,11 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body style={{ background: `var(--background-gradient)` }}>
+    <html
+      style={{
+        scrollBehavior: "smooth",
+      }}
+      className={"dark"}
+    >
+      <body>
         <Header />
-        {children}
-        <Language />
+        <div className="page-content">{children}</div>
+        <div>
+          <Language />
+        </div>
       </body>
     </html>
   );

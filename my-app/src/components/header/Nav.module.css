@@ -1,0 +1,59 @@
+.navMobile {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navDesktop {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+
+  font-size: 20px;
+}
+
+.navMobile > a {
+  max-width: max-content;
+}
+
+.navMobile > a,
+.navDesktop > a {
+  font-family: "TacticSans-Bld", sans-serif;
+  color: var(--black-opacity-02);
+
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.navMobile > a::after,
+.navDesktop > a::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--red-header);
+
+  transition: 0.3s ease-in-out;
+
+  width: 0;
+  height: 3px;
+
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.navMobile > a.active,
+.navMobile > a:hover,
+.navDesktop > a.active,
+.navDesktop > a:hover {
+  color: #fff;
+}
+
+.navMobile > a:hover::after,
+.navMobile > a.active::after,
+.navDesktop > a:hover::after,
+.navDesktop > a.active::after {
+  width: 100%;
+}

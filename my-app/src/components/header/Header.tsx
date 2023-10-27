@@ -1,24 +1,43 @@
-'use client';
+"use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import classes from "./Header.module.css";
-import { links } from "./Header.constants";
+import { useState } from "react";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import mobileMenu from "/public/mobileMenu.svg";
+import Language from "../language";
+import Nav from "./Nav";
+
+import style from "./Header.module.css";
 
 export default function Header() {
-  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
+  const onOpenChange = () => {
+    setOpen((s) => !s);
+  };
 
   return (
-    <header className={classes.header}>
-      <nav className={classes.nav}>
-        {
-          links.map(({ href, label }) => {
-            return (
-              <Link key={href} href={href} className={pathname === `${href}` ? classes.active : ""}>{label}</Link>
-            );
-          })
-        }
-      </nav>
+    <header className={style.header}>
+      <div className={style.mobile}>
+        <Sheet open={open}>
+          <SheetTrigger>
+            <img
+              src={mobileMenu.src}
+              className={style.mobileMenuButton}
+              onClick={onOpenChange}
+            />
+          </SheetTrigger>
+          <SheetContent onClose={() => setOpen(false)}>
+            <Nav mobile className={undefined} onOpenChange={onOpenChange} />
+            <div className={style.mobileDelimiter}></div>
+            <Language />
+          </SheetContent>
+        </Sheet>
+      </div>
+      <Nav
+        mobile={undefined}
+        className={style.desktop}
+        onOpenChange={undefined}
+      />
     </header>
   );
 }

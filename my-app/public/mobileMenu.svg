@@ -1,0 +1,40 @@
+<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="27"
+            viewBox="0 0 29 27"
+            fill="none"
+          >
+            <path
+              d="M29 10C29 4.47715 24.5228 0 19 0H0.0838718V17C0.0838718 22.5228 4.56102 27 10.0839 27H29V10Z"
+              fill="white"
+            />
+            <rect
+              width="21.6871"
+              height="1.35"
+              rx="0.675"
+              transform="matrix(-1 0 0 1 26.1074 8.10156)"
+              fill="#070707"
+            />
+            <rect
+              width="15.181"
+              height="1.35"
+              rx="0.675"
+              transform="matrix(-1 0 0 1 26.1074 12.8242)"
+              fill="#070707"
+            />
+            <rect
+              width="22.41"
+              height="1.35"
+              rx="0.675"
+              transform="matrix(-1 0 0 1 26.1074 17.5508)"
+              fill="#070707"
+            />
+            <rect
+              width="5.78323"
+              height="1.35"
+              rx="0.675"
+              transform="matrix(-1 0 0 1 9.48047 12.8242)"
+              fill="#505050"
+            />
+          </svg>
