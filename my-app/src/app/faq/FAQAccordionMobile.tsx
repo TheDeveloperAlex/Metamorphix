@@ -17,9 +17,9 @@ export default function AccordionMobile() {
 
   return (
     <>
-      {width > 372 ? null : (
+      {width > 720 ? null : (
         <div
-          className="mx-[27px] self-stretch px-[10px] mt-"
+          className="mx-[27px] self-stretch px-[10px]"
           style={{
             background: "rgba(19, 19, 19, 0.40)",
             fontFamily: "Montserrat, sans-serif",

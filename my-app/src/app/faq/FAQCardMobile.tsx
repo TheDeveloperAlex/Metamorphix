@@ -14,13 +14,13 @@ export default function FAQCardMobile({ index, text, title }: FAQCardProps) {
             <span className="absolute blur-[2px] left-0">{index}</span>
             {index}
           </div>
-          <div className="relative text-[10px] max-w-[202px] text-left font-bold">
+          <div className="relative text-[12px] max-372:text-[10px]  max-w-[202px] text-left font-bold">
             <span className="absolute blur-[0.5px] left-0">{title}</span>
             {title}
           </div>
         </div>
       </AccordionTrigger>
-      <AccordionContent className="text-[8px] leading-[normal] text-white-opacity-02 font-medium pt-3 border-t rounded-t-[1px]">
+      <AccordionContent className="text-[10px] max-372:text-[8px] leading-[normal] text-white-opacity-02 font-medium pt-3 border-t rounded-t-[1px]">
         {text}
       </AccordionContent>
     </AccordionItem>
