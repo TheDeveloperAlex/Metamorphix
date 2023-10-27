@@ -1,0 +1,74 @@
+.topUserCard {
+	display: flex;
+	align-items: center;
+	padding: 7px 25px;
+	position: relative;
+
+	font-size: 14px;
+
+	margin-top: 15px;
+
+	border: 1px solid #fff;
+	border-radius: 5px;
+	background: black;
+  mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	transform: translateX(-100%);
+	opacity: 0;
+
+	animation: cardAnimation 1s linear forwards;
+	transition: visibility 1s;
+}
+.topUserCard:first-child {
+	margin: 0;
+}
+.topUserCard:nth-of-type(2) {
+	animation-delay: .5s;
+	margin-left: 30px;
+}
+.topUserCard:nth-of-type(3) {
+	animation-delay: .7s;
+	margin-left: 60px;
+}
+.topUserCard:nth-of-type(4) {
+	animation-delay: .9s;
+	margin-left: 90px;
+}
+.topUserCard:nth-of-type(5) {
+	animation-delay: 1.1s;
+	margin-left: 120px;
+}
+
+.topUserCard img {
+	border-radius: 100px;
+	width: 45px;
+	margin-left: 10px;
+}
+
+.topUserCardInfo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+.topUserCardRoles {
+	display: flex;
+	align-items: center;
+
+	margin-top: 7px;
+}
+.topUserCardRoles div {
+	font-size: 10px;
+	margin-left: 10px;
+}
+.topUserCardRoles div:first-child {
+	margin: 0;
+}
+
+@keyframes cardAnimation {
+	80% {
+		transform: translateX(15px);
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

@@ -15,9 +15,9 @@
 }
 
 .activitySwitch {
-	background-color: rgb(162, 162, 162);
+	background: rgba(217, 217, 217, 0.10);
 	margin-left: 25px;
 }
-.activitySwitch[data-state='checked'] {
+.activitySwitch span {
 	background-color: var(--red-switch);
 }
