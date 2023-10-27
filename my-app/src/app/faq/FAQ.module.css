@@ -1,0 +1,15 @@
+.icon {
+  transition: 0.15s ease-in-out;
+  transform: rotate(45deg);
+}
+
+.block:hover .icon {
+  transform: rotate(90deg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  gap: 15px;
+}
