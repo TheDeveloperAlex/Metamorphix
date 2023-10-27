@@ -1,0 +1,21 @@
+@media screen and (max-width: 719px) {
+  .list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .list {
+    display: grid;
+    /* grid-template-columns: repeat(3, 263px); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    /* max-width: 1000px;
+    margin: 0 auto; */
+  }
+
+  .list > div {
+    justify-content: center;
+  }
+}

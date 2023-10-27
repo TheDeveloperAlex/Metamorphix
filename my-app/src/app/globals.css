@@ -1,6 +1,14 @@
 @import url("https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap");
 
+@import "swiper/css";
+/* @import "swiper/css/effect-cards"; */
+@import "swiper/css";
+@import "swiper/css/navigation";
+/* @import "swiper/css/pagination"; */
+
+@import "swiper/css/effect-coverflow";
+
 @font-face {
   font-family: "TacticSans-Bld";
   src: url("/fonts/tacticSans/TacticSans-Bld.otf") format("opentype");
@@ -100,4 +108,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* SLIDER */
+
+@media screen and (min-width: 360px) {
+  .swiper-slide {
+    width: 27rem !important;
+  }
+}
+
+@media screen and (min-width: 720px) {
 }
