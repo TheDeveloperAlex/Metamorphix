@@ -9,7 +9,7 @@ export default function FAQCard({ index, text, title }: FAQCardProps) {
   return (
     <>
       <div
-        className={`relative pt-[74px] ${classes.block} max-w-[640px] max-720:hidden`}
+        className={`relative pt-[74px] ${classes.block} max-w-[640px] max-720:hidden mx-8`}
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
         <span className="absolute text-[180px] font-extrabold top-0 left-0 text-white text-opacity-5 -z-10">

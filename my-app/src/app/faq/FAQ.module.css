@@ -13,3 +13,7 @@
   align-items: end;
   gap: 15px;
 }
+
+.noUnderline:hover div + div  {
+  text-decoration: underline;
+}

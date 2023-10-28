@@ -4,11 +4,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { FAQCardProps } from "./FAQCard";
+import classes from './FAQ.module.css'
 
 export default function FAQCardMobile({ index, text, title }: FAQCardProps) {
   return (
     <AccordionItem value={`${index}`} className="border-none">
-      <AccordionTrigger className="px-[5px] text-white hover:no-underline pt-[5px] pb-[10px]">
+      <AccordionTrigger className={`px-[5px] text-white pt-[5px] pb-[10px] hover:no-underline ${classes.noUnderline}`}>
         <div className="flex gap-5 items-center">
           <div className="text-white-opacity-02 text-[25px] relative">
             <span className="absolute blur-[2px] left-0">{index}</span>
