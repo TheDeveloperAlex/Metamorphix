@@ -1,6 +1,6 @@
 import classes from "./page.module.css";
 import { HeroSection } from "@/components/hero-section/HeroSection";
-import { ServersOnline } from "@/components/servers-online/ServersOnline";
+import { ServerOnline } from "@/components/server-online/ServerOnline";
 import { ServerActivity } from "@/components/server-activity/ServerActivity";
 import { getUsers } from "./page.services";
 
@@ -12,7 +12,7 @@ export default async function Home() {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
         <div className={classes.left}>
           <HeroSection />
-          <ServersOnline />
+          <ServerOnline />
           <ServerActivity topUsers={topUsers} />
         </div>
         <div className={classes.right}>

@@ -25,8 +25,19 @@
 	flex-direction: column;
 
 	position: relative;
+	animation: textAnimation 1s;
 }
 
+@keyframes textAnimation {
+	0% {
+		transform: translateX(-300px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
 
 @keyframes imageShadow {
 	50% {
