@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-// !!!!Убрать это
-const URL = "mongodb+srv://admin:metamorphix@cluster.3z8r40g.mongodb.net";
+const URL = process.env.DATABASE_URL || "";
 
 export const connectMongoDb = () => {
 	try {

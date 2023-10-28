@@ -1,6 +1,7 @@
 .main {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 
 	font-family: "TacticSans-Bld", sans-serif;
 
@@ -11,7 +12,12 @@
 }
 
 .right img {
-	width: 100%;
+	width: 92%;
+	position: relative;
+
+	border-radius: 100%;
+	box-shadow: 0 0 250px 10px #da1c1c6d;
+	animation: imageShadow 5s infinite;
 }
 
 .left {
@@ -19,4 +25,14 @@
 	flex-direction: column;
 
 	position: relative;
+}
+
+
+@keyframes imageShadow {
+	50% {
+		box-shadow: 0 0 250px 10px #8b0e0e6d;		
+	}
+	100% {
+		box-shadow: 0 0 250px 10px #da1c1c6d;
+	}
 }

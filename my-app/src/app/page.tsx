@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <main className={classes.main}>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
         <div className={classes.left}>
           <HeroSection />
           <ServersOnline />
@@ -17,7 +17,7 @@ export default async function Home() {
         </div>
         <div className={classes.right}>
           {/* (tut nado norm picture) */}
-          <img src="/home-page/test.svg" alt="" />
+          <img src="/home-page/test.png" alt="" />
         </div>
       </div>
     </main>
