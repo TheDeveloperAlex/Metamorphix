@@ -1,3 +1,4 @@
+import AboutUs from "@/components/aboutUs/AboutUs";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <div style={{ fontFamily: "TacticSansExd-BldIt, sans-serif" }}>
         TacticSansExd-BldIt
       </div>
+      <AboutUs />
     </main>
   );
 }
