@@ -4,8 +4,10 @@ import { ServerOnline } from "@/components/server-online/ServerOnline";
 import { ServerActivity } from "@/components/server-activity/ServerActivity";
 import { getUsers } from "./page.services";
 
+export const revalidate = 3600
+
 export default async function Home() {
-  const { topUsers } = await getUsers();
+  const topUsers = await getUsers();
 
   return (
     <main className={classes.main}>

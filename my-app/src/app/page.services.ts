@@ -1,13 +1,13 @@
+import { connectMongoDb } from "@/lib/mongo";
+import { User } from "@/models/User/User.schema";
+import { IUser } from "@/types/IUser";
+
 export const getUsers = async () => {
 	try {
-		const res = await fetch("http://localhost:3000/api/users", {
-			cache: "no-store"
-		});
-
-		if (!res.ok) throw new Error("Failed to fetch users");
-
-		return res.json();
+		await connectMongoDb();
+		const users: IUser[] = await User.find({}, '-posts');
+		return users.sort((a,b) => b.balance - a.balance)
 	} catch (error) {
-		console.log(error);
+		throw error
 	}
 };

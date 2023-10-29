@@ -3,7 +3,7 @@
 	align-items: center;
 	padding: 7px 25px;
 	position: relative;
-
+	max-width: 711px;
 	font-size: 14px;
 
 	margin-top: 15px;
@@ -37,10 +37,9 @@
 	animation-delay: 1.1s;
 	margin-left: 120px;
 }
-
-.topUserCard img {
-	border-radius: 100px;
+.img {
 	width: 45px;
+	height: 45px;
 	margin-left: 10px;
 }
 

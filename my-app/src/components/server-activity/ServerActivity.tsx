@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Switch } from "../ui/switch";
 import classes from "./ServerActivity.module.css";
-import { User } from "@/typings/User";
 import { TopUsersList } from "../top-users-list/TopUsersList";
+import { IUser } from "@/types/IUser";
 
 interface Props {
-	topUsers: User[];
+	topUsers: IUser[];
 }
 
 export const ServerActivity = ({ topUsers }: Props) => {
@@ -20,7 +20,7 @@ export const ServerActivity = ({ topUsers }: Props) => {
 	return (
 		<div className={classes.activitySection}>
 			<div className={classes.activitySectionHeader}>
-				<h2 className={classes.activityTitle}>Топ <span>3</span> участников сервера по онлайну и активностям</h2>
+				<h2 className={classes.activityTitle}>Топ <span>4</span> участников сервера по онлайну и активностям</h2>
 				<Switch className={classes.activitySwitch} checked={switched} onCheckedChange={handleSwitch} />
 			</div>
 			<TopUsersList topUsers={topUsers} visible={switched} />

@@ -1,10 +1,10 @@
-import { User } from "@/typings/User";
+import { IUser } from "@/types/IUser";
 import { CSSProperties } from "react";
 
 export type Role = string;
 
 export interface ITopUserCardProps {
-	user: User;
+	user: IUser;
 	top: number;
 	style?: CSSProperties;
 }
