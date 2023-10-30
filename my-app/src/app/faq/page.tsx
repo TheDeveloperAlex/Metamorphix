@@ -14,12 +14,6 @@ export default function FAQ() {
         <br />
         <span className="max-372:text-[40px] text-[48px] text-red-header">СЕРВЕРА</span>
       </h1>
-      <div className="flex max-lg:flex-col max-lg:items-center justify-between self-stretch mt-[60px] max-720:hidden">
-        {FAQItems.slice(0, 2).map((elem) => (
-          <FAQCard key={elem.index} {...elem} />
-        ))}
-      </div>
-      <FAQCard {...FAQItems[2]} />
       <FAQAcordionMobile />
     </div>
   );
