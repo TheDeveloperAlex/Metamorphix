@@ -25,3 +25,14 @@
 		background-color: #3fc53c;
 	}
 }
+
+@media screen and (max-width: 800px){
+	.online {
+		width: 15px;
+		height: 15px;
+	}
+	.online > span {
+		width: 10px;
+		height: 10px;
+	}
+}

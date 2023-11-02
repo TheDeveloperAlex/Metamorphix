@@ -21,3 +21,9 @@
 .activitySwitch span {
 	background-color: var(--red-switch);
 }
+
+@media screen and (max-width: 800px) {
+	.activityTitle {
+		font-size: 15px;
+	}
+}

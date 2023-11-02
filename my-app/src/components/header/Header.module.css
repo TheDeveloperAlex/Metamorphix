@@ -40,3 +40,12 @@
 a.active {
 	color: #fff;
 }
+
+@media screen and (max-width: 800px){
+	.nav {
+		font-size: 18px;
+	}
+	.nav a {
+		margin-left: 15px;
+	}
+}

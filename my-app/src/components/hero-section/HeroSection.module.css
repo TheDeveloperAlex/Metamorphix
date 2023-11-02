@@ -11,3 +11,12 @@
 	left: -20px;
 	top: -13px;
 }
+
+@media screen and (max-width: 800px) {
+	.title {
+		font-size: 32px;
+	}
+	.title span {
+		font-size: 36px;
+	}
+}

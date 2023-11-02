@@ -11,6 +11,11 @@
 	margin-top: 95px;
 }
 
+.mainInner {
+	display: flex;
+	justify-content: space-between;
+}
+
 .right img {
 	width: 92%;
 	position: relative;
@@ -45,5 +50,20 @@
 	}
 	100% {
 		box-shadow: 0 0 250px 10px #da1c1c6d;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.mainInner {
+		flex-direction: column;
+	}
+
+	.right {
+		display: none;
+	}
+
+	.main {
+		padding: 0 35px;
 	}
 }

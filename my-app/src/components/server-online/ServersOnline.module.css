@@ -14,3 +14,9 @@
 	color: #fff;
 	font-family: "TacticSansExd-BldIt", sans-serif;
 }
+
+@media screen and (max-width: 800px){
+	.online h3 {
+		font-size: 14px;
+	}
+}

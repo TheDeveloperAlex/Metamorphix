@@ -5,15 +5,15 @@ import { ServerActivity } from "@/components/server-activity/ServerActivity";
 import { getUsers } from "./page.services";
 
 export default async function Home() {
-  const { topUsers } = await getUsers();
+  const { users } = await getUsers();
 
   return (
     <main className={classes.main}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+      <div className={classes.mainInner}>
         <div className={classes.left}>
           <HeroSection />
           <ServerOnline />
-          <ServerActivity topUsers={topUsers} />
+          <ServerActivity topUsers={users} />
         </div>
         <div className={classes.right}>
           {/* (tut nado norm picture) */}

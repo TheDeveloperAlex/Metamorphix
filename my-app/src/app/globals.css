@@ -11,6 +11,10 @@
   src: url("/fonts/tacticSans/TacticSansExd-BldIt.otf") format("opentype");
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
   --white-opacity-07: rgba(255, 255, 255, 0.7);
   --red-header: #ff1d1d;
