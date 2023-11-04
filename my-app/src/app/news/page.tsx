@@ -15,7 +15,7 @@ export default function News() {
         <span className="text-[48px] text-red-header">СЕРВЕРА</span>
       </h1>
       <div
-        className="grid grid-cols-2 gap-[54px] mt-5"
+        className="grid grid-cols-2 gap-[54px] mt-5 grow"
         style={{ gridTemplateRows: "450px" }}
       >
         {posts.map((elem) => (
