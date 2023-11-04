@@ -5,6 +5,7 @@ import Header from "@/components/header/Header";
 import Language from "@/components/language/Language";
 
 import "./globals.css";
+import "./scroll.css"
 
 export const metadata: Metadata = {
   title: "Create Next App",
