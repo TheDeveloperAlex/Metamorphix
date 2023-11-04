@@ -4,8 +4,10 @@ import { ServerOnline } from "@/components/server-online/ServerOnline";
 import { ServerActivity } from "@/components/server-activity/ServerActivity";
 import { getUsers } from "./page.services";
 
+export const revalidate = 3600;
+
 export default async function Home() {
-  const { users } = await getUsers();
+  const topUsers = await getUsers();
 
   return (
     <main className={classes.main}>
@@ -13,7 +15,7 @@ export default async function Home() {
         <div className={classes.left}>
           <HeroSection />
           <ServerOnline />
-          <ServerActivity topUsers={users} />
+          <ServerActivity topUsers={topUsers} />
         </div>
         <div className={classes.right}>
           {/* (tut nado norm picture) */}
