@@ -4,7 +4,7 @@ import LinksPolicy from "../../components/LinkParser";
 export default async function TermsOfService() {
   return (
     <div
-      className="flex flex-col items-center h-full gap-[90px] py-[122px] top-0 text-white"
+      className="flex flex-col items-center h-full gap-[90px] pt-[80px] pb-[20px] top-0 text-white"
       style={{ fontFamily: "TacticSans-Bld, sans-serif" }}
     >
       <h1 className="max-[480px]:text-[30px] text-[34px] md:text-[40px] text-center leading-[40px] text-white relative">
@@ -16,7 +16,7 @@ export default async function TermsOfService() {
         </span>
       </h1>
       <div
-        className="overflow-y-scroll max-w-[1352px] px-2 max-[480px]:text-[16px] text-[19px] mx-2"
+        className="overflow-y-auto max-w-[1352px] px-2 max-[480px]:text-[16px] text-[19px] mx-2"
         style={{ fontFamily: "Gilroy, sans-serif" }}
       >
         <h2 className="text-center text-[28px] font-bold">TERMS OF USE</h2>

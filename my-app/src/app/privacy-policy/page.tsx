@@ -4,7 +4,7 @@ import LinksPolicy from "../../components/LinkParser";
 export default async function PrivacyPolicy() {
   return (
     <div
-      className="flex flex-col items-center h-full gap-[90px] py-[122px] absolute w-full top-0 text-white"
+      className="flex flex-col items-center h-full gap-[90px] pt-[80px] pb-[20px] relative w-full top-0 text-white"
       style={{ fontFamily: "TacticSans-Bld, sans-serif" }}
     >
       <h1 className="text-[30px] md:text-[40px] text-center leading-[40px] text-white relative">
@@ -20,7 +20,7 @@ export default async function PrivacyPolicy() {
         </span>
       </h1>
       <div
-        className="overflow-y-scroll max-w-[1352px] px-2 max-[480px]:text-[16px] text-[19px] mx-2"
+        className="overflow-y-auto max-w-[1352px] px-2 max-[480px]:text-[16px] text-[19px] mx-2"
         style={{ fontFamily: "Gilroy, sans-serif" }}
       >
         <h2 className="text-center text-[28px] font-bold">PRIVACY POLICY</h2>
