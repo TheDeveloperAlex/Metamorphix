@@ -1,19 +1,29 @@
-import AboutUs from "@/components/aboutUs/AboutUs";
-import Image from "next/image";
+import { getUsers } from "./page.services";
 
-export default function Home() {
+import { HeroSection } from "@/components/hero-section/HeroSection";
+import { ServerOnline } from "@/components/server-online/ServerOnline";
+import { ServerActivity } from "@/components/server-activity/ServerActivity";
+
+import style from "./page.module.css";
+
+export const revalidate = 3600;
+
+export default async function Home() {
+  const topUsers = await getUsers();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Page
-      <div style={{ fontFamily: "Gilroy, sans-serif" }}>Gilroy</div>
-      <div style={{ fontFamily: "Montserrat, sans-serif" }}>Gilroy</div>
-      <div style={{ fontFamily: "TacticSans-Bld, sans-serif" }}>
-        TacticSans-Bld
+    <main className={style.main}>
+      <div className={style.mainInner}>
+        <div className={style.left}>
+          <HeroSection />
+          <ServerOnline />
+          <ServerActivity topUsers={topUsers} />
+        </div>
+        <div className={style.right}>
+          {/* (tut nado norm picture) */}
+          <img src="/home-page/test.png" alt="" />
+        </div>
       </div>
-      <div style={{ fontFamily: "TacticSansExd-BldIt, sans-serif" }}>
-        TacticSansExd-BldIt
-      </div>
-      <AboutUs />
     </main>
   );
 }
