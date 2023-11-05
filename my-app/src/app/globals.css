@@ -108,6 +108,41 @@ body {
   flex-direction: column;
 }
 
+@media screen and (max-width: 1023px) {
+  body {
+    background-image: linear-gradient(
+        90deg,
+        #000 0.15%,
+        rgba(0, 0, 0, 0.73) 195.88%,
+        #0b0005 195.9%
+      ),
+      url("/gatesOld.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: black;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: linear-gradient(
+        90deg,
+        #000 0.15%,
+        rgba(0, 0, 0, 0.73) 195.88%,
+        #0b0005 195.9%
+      ),
+      url("/gates.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    background-position: center;
+  }
+}
+
 .page-content {
   flex-grow: 1;
 }
