@@ -1,38 +1,54 @@
 .online {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 20px;
-	height: 20px;
-	border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
 
-	background-color: #2C8D2A;
-
-	box-shadow: lightgreen 0 0 10px;
+  background-color: rgba(44, 141, 42, 0.3);
+  box-shadow: rgba(44, 141, 42, 0.3) 0 0 10px;
+  animation: animationOutside 1.75s infinite;
 }
 
 .online > span {
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	border-radius: 100%;
-	background-color: #04ff00;
-	animation: animation 2s infinite;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #2c8d2a;
+  box-shadow: #2c8d2a 0 0 10px;
 }
 
-@keyframes animation {
-	50% {
-		background-color: #3fc53c;
-	}
+@keyframes animationOutside {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@media screen and (max-width: 800px){
-	.online {
-		width: 15px;
-		height: 15px;
-	}
-	.online > span {
-		width: 10px;
-		height: 10px;
-	}
+@media screen and (max-width: 1023px) {
+  .online {
+    width: 18px;
+    height: 18px;
+  }
+  .online > span {
+    width: 8px;
+    height: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .online {
+    width: 22px;
+    height: 22px;
+  }
+  .online > span {
+    width: 10px;
+    height: 10px;
+  }
 }

@@ -1,7 +1,7 @@
 import { getUsers } from "./page.services";
 
-import { HeroSection } from "@/components/hero-section/HeroSection";
-import { ServerOnline } from "@/components/server-online/ServerOnline";
+import HeroSection from "@/components/hero-section/HeroSection";
+import ServerOnline from "@/components/server-online/ServerOnline";
 import { ServerActivity } from "@/components/server-activity/ServerActivity";
 
 import style from "./page.module.css";

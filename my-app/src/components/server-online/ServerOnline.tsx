@@ -1,11 +1,14 @@
-import { OnlineIcon } from "../online-icon/OnlineIcon";
-import classes from "./ServersOnline.module.css";
+import OnlineIcon from "../online-icon";
+import style from "./ServersOnline.module.css";
 
-export const ServerOnline = () => {
-	return (
-		<div className={classes.online}>
-			<OnlineIcon />
-			<h3 className={classes.onlineCount}>онлайн сервера: <span>29 100</span></h3>
-		</div>
-	);
-};
+export default function ServerOnline() {
+  return (
+    <div className={style.online}>
+      <OnlineIcon />
+      <h3>
+        <span className={style.onlineServer}>онлайн сервера: </span>
+        <span className={style.onlineCount}>29 100</span>
+      </h3>
+    </div>
+  );
+}

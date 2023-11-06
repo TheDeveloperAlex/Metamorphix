@@ -1,22 +1,55 @@
 .online {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .online h3 {
-	padding-left: 12px;
+  /* padding-left: 12px; */
+}
+
+.onlineServer {
+  color: #656565;
+
+  font-family: "TacticSans-Bld", sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .onlineCount {
-	color: #656565;
-	text-transform: uppercase;
-}
-.onlineCount span {
-	color: #fff;
-	font-family: "TacticSansExd-BldIt", sans-serif;
+  color: #fff;
+  font-family: "TacticSansExd-BldIt", sans-serif;
+
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 800px){
-	.online h3 {
-		font-size: 14px;
-	}
+@media screen and (max-width: 479px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 719px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 17px;
+  }
 }

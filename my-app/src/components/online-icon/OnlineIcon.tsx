@@ -1,9 +1,9 @@
-import classes from "./OnlineIcon.module.css";
+import style from "./OnlineIcon.module.css";
 
-export const OnlineIcon = () => {
-	return (
-		<span className={classes.online}>
-			<span></span>
-		</span>
-	);
-};
+export default function OnlineIcon() {
+  return (
+    <span className={style.online}>
+      <span></span>
+    </span>
+  );
+}
