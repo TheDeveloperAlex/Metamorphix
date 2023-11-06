@@ -8,6 +8,13 @@ export const revalidate = 3600;
 
 export default async function Home() {
   const topUsers = await getUsers();
+  const res = await fetch("https://discord.com/api/v10/guilds/1123275373174608002?with_counts=true", {headers: {
+    'Authorization': 'Bot MTE0NjI0OTI3ODUzNzM0Mjk4Nw.GeN72M.aUVIaKgVKggbJA4dq_Qsuj6GNsG_7rCBuizdKI'
+  }})
+  const users = await res.json()
+  const totalMembers = users["approximate_member_count"] as number
+  const currentOnline = users["approximate_presence_count"] as number
+  console.log(totalMembers, currentOnline)
 
   return (
     <main className={classes.main}>
