@@ -54,6 +54,13 @@
 
   .title {
     font-size: 46px;
+    margin-left: 48px;
+  }
+
+}
+@media (max-width: 1024px) {
+  .shape {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {

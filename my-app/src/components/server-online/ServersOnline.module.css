@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  font-family: "TacticSans-Bld", sans-serif;
 }
 .online h3 {
   /* padding-left: 12px; */
@@ -9,9 +10,6 @@
 
 .onlineServer {
   color: #656565;
-
-  font-family: "TacticSans-Bld", sans-serif;
-
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -19,13 +17,20 @@
 }
 
 .onlineCount {
-  color: #fff;
-  font-family: "TacticSansExd-BldIt", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
 
   font-style: italic;
   font-weight: 400;
   line-height: normal;
-  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.onlineTotal {
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 4px;
 }
 
 @media screen and (max-width: 479px) {
@@ -44,6 +49,10 @@
   .onlineServer,
   .onlineCount {
     font-size: 14px;
+  }
+
+  .online {
+    margin-left: 48px;
   }
 }
 

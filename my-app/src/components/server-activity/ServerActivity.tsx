@@ -20,7 +20,7 @@ export const ServerActivity = ({ topUsers }: Props) => {
 	return (
 		<div className={classes.activitySection}>
 			<div className={classes.activitySectionHeader}>
-				<h2 className={classes.activityTitle}>Топ <span>4</span> участников сервера по онлайну и активностям</h2>
+				<h2 className={classes.activityTitle}>Топ <span>5</span> участников сервера по онлайну и активностям</h2>
 				<Switch className={classes.activitySwitch} checked={switched} onCheckedChange={handleSwitch} />
 			</div>
 			<TopUsersList topUsers={topUsers} visible={switched} />

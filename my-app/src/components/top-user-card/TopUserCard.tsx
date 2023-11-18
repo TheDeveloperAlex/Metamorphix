@@ -2,15 +2,14 @@ import { RoleBadge } from "../role-badge/RoleBadge";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Skeleton } from "../ui/skeleton";
 import classes from "./TopUserCard.module.css"
-import { ITopUserCardProps } from "./TopUserCard.typings";
-import Image from "next/image";
+import { ITopUserCardProps, allowedRoles } from "./TopUserCard.typings";
 
 export const TopUserCard = ({ user, style, top }: ITopUserCardProps) => {
-	const filteredRoles = user.roles.filter((user, index) => index < 5);
+	const filteredRoles = user.roles.slice(0, 5).filter((user) => allowedRoles.includes(user));
 
 	return (
 		<div className={classes.topUserCard} style={style}>
-			<h2>{top}</h2>
+			{/* <h2>{top}</h2> */}
 			<Avatar className={classes.img}>
 				<AvatarImage src={user.avatar}/>
 				<AvatarFallback className="bg-zinc-700">

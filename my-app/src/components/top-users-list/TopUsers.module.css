@@ -2,6 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 25px;
-
+	overflow: visible;
 	transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@media screen and (max-width: 1024px) {
+	.topUserCards {
+		margin-top: 5px;
+	}
 }

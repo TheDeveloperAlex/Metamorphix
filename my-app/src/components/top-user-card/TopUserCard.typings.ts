@@ -8,3 +8,13 @@ export interface ITopUserCardProps {
 	top: number;
 	style?: CSSProperties;
 }
+
+export const allowedRoles: string[] = [
+	"Tier_1",
+	"Tier_2",
+	"Tier_3",
+	"Trickster",
+	"Wealthy",
+	"Well-fixed",
+	"Cashy"
+]

@@ -4,7 +4,7 @@ import classes from "./RoleBadge.module.css";
 
 export const RoleBadge = ({ role, color }: IRoleBadgeProps) => {
 	return (
-		<Badge>
+		<Badge variant={"role"}>
 			<span className={classes.roleColorDot} style={{ backgroundColor: color }}></span>
 			{role}
 		</Badge>

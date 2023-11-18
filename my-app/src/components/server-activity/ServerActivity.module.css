@@ -22,7 +22,38 @@
 	background-color: var(--red-switch);
 }
 
+@media screen and (max-width: 1024px) {
+	.activitySection {
+		margin-left: 90px;
+	}
+	.activityTitle {
+		font-size: 24px;
+		max-width: 720px;
+	}
+}
+
 @media screen and (max-width: 800px) {
+	.activityTitle {
+		font-size: 20px;
+	}
+	.activitySection {
+		margin-left: 60px;
+	}
+	.activitySwitch {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.activitySection {
+		margin-left: 0px;
+	}
+	.activityTitle {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.activityTitle {
 		font-size: 15px;
 	}
