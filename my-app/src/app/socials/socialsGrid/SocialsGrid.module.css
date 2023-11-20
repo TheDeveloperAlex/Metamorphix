@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  justify-content: center;
+  max-width: 888px;
+  margin: 0 auto;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 266px;
+  margin: 0 auto;
+}
