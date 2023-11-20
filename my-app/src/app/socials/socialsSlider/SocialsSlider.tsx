@@ -15,7 +15,7 @@ import TopListItem from "../topListItem/index";
 
 export default function SocialsSlider() {
   return (
-    <section className="w-full">
+    <section className={`w-full max-[767px]:mt-[58px] min-[768px]:mt-[80px]`}>
       <div>
         <ul className=" w-full">
           <Swiper
@@ -41,10 +41,32 @@ export default function SocialsSlider() {
           >
             <SwiperSlide>
               <div className="mb-[20px]">
+                <TopListItem type="telegram" />
+              </div>
+              <SocialsListItem type="telegram" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="mb-[20px]">
+                <TopListItem type="instagram" />
+              </div>
+              <SocialsListItem type="instagram" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="mb-[20px]">
                 <TopListItem type="discord" />
               </div>
               <SocialsListItem type="discord" />
             </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="mb-[20px]">
+                <TopListItem type="telegram" />
+              </div>
+              <SocialsListItem type="telegram" />
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className="mb-[20px]">
                 <TopListItem type="instagram" />
@@ -53,27 +75,9 @@ export default function SocialsSlider() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="mb-[20px]">
-                <TopListItem type="telegram" />
-              </div>
-              <SocialsListItem type="telegram" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="mb-[20px]">
                 <TopListItem type="discord" />
               </div>
               <SocialsListItem type="discord" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="mb-[20px]">
-                <TopListItem type="instagram" />
-              </div>
-              <SocialsListItem type="instagram" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="mb-[20px]">
-                <TopListItem type="telegram" />
-              </div>
-              <SocialsListItem type="telegram" />
             </SwiperSlide>
           </Swiper>
         </ul>

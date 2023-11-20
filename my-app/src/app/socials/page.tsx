@@ -1,5 +1,6 @@
 "use client";
 
+import Loading from "@/components/loading/index";
 import { useEffect, useRef, useState } from "react";
 
 import SocialsGrid from "./socialsGrid/index";
@@ -7,7 +8,7 @@ import SocialsSlider from "./socialsSlider/SocialsSlider";
 
 export default function Socials() {
   const wrapper = useRef(null);
-  const [width, setWidth] = useState(320);
+  const [width, setWidth] = useState(null);
 
   useEffect(() => {
     if (!wrapper || !wrapper.current) return;
@@ -27,13 +28,17 @@ export default function Socials() {
   }, [wrapper]);
 
   return (
-    <div className="w-full" ref={wrapper}>
-      {width > 910 ? (
-        <SocialsGrid />
+    <div className="w-full h-full grow-1" ref={wrapper}>
+      {width ? (
+        width > 910 ? (
+          <SocialsGrid />
+        ) : (
+          <div>
+            <SocialsSlider />
+          </div>
+        )
       ) : (
-        <div>
-          <SocialsSlider />
-        </div>
+        <Loading />
       )}
     </div>
   );
