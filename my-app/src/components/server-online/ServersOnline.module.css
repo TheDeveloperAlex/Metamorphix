@@ -1,0 +1,64 @@
+.online {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "TacticSans-Bld", sans-serif;
+}
+.online h3 {
+  /* padding-left: 12px; */
+}
+
+.onlineServer {
+  color: #656565;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.onlineCount {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 4px;
+}
+
+.onlineTotal {
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 479px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 719px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 14px;
+  }
+
+  .online {
+    margin-left: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .onlineServer,
+  .onlineCount {
+    font-size: 17px;
+  }
+}
