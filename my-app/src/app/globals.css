@@ -17,6 +17,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  min-height: 100vh;
+}
+
 :root {
   --white-opacity-07: rgba(255, 255, 255, 0.7);
   --red-header: #ff1d1d;

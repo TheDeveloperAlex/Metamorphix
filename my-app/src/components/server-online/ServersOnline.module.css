@@ -33,21 +33,14 @@
   margin-left: 4px;
 }
 
-@media screen and (max-width: 479px) {
-  .onlineServer,
-  .onlineCount {
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 719px) {
-  .onlineServer,
-  .onlineCount {
+
+@media screen and (max-width: 719px) {
+  .online h3 {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 720px) and (max-width: 1023px) {
-  .onlineServer,
-  .onlineCount {
+  .online h3 {
     font-size: 14px;
   }
 
@@ -57,8 +50,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .onlineServer,
-  .onlineCount {
+  .online h3 {
     font-size: 17px;
   }
 }

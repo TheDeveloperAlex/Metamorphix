@@ -22,6 +22,12 @@
 	background-color: var(--red-switch);
 }
 
+@media (max-width: 1450px) {
+	.activitySection {
+		margin-top: 24px;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.activitySection {
 		margin-left: 90px;

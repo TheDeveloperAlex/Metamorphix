@@ -72,9 +72,3 @@
     font-size: 64px;
   }
 }
-
-@media screen and (min-width: 1280px) {
-  .title {
-    margin-bottom: 30px;
-  }
-}

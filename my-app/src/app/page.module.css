@@ -5,7 +5,7 @@
 
   font-family: "TacticSans-Bld", sans-serif;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   padding: 0 6rem;
   margin-top: 60px;
@@ -39,7 +39,6 @@
 .left {
   display: flex;
   flex-direction: column;
-
   position: relative;
   animation: textAnimation 1s;
 }
@@ -61,6 +60,12 @@
   }
   100% {
     box-shadow: 0 0 250px 10px #da1c1c6d;
+  }
+}
+
+@media (min-width: 1450px) {
+  .left {
+    min-width: 825px;
   }
 }
 
@@ -86,7 +91,7 @@
   }
 
   .main {
-    padding: 0 35px;
+    padding: 0 33px;
   }
 }
 
