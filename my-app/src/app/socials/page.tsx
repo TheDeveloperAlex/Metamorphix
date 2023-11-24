@@ -1,60 +1,45 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+"use client";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Progress } from "@/components/ui/progress";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import Loading from "@/components/loading/index";
+import { useEffect, useRef, useState } from "react";
 
-import { Skeleton } from "@/components/ui/skeleton";
-
-import { Switch } from "@/components/ui/switch";
+import SocialsGrid from "./socialsGrid/index";
+import SocialsSlider from "./socialsSlider/SocialsSlider";
 
 export default function Socials() {
+  const wrapper = useRef(null);
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    if (!wrapper || !wrapper.current) return;
+
+    const handleResize = () => {
+      const size = wrapper?.current?.clientWidth;
+      setWidth(size);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [wrapper]);
+
   return (
-    <div>
-      Socials
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-      <Badge>Badge</Badge>
-      <Button variant="outline">Button</Button>
-      <Avatar>
-        <AvatarImage src="https://github.com/shadcn.png" />
-        <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
-      <Progress value={33} />
-      <Sheet>
-        <SheetTrigger>Open</SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Are you sure absolutely sure?</SheetTitle>
-            <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </SheetDescription>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet>
-      <Skeleton className="w-[100px] h-[20px] rounded-full" />
-      <Switch checked={true} />
+    <div className="w-full h-full grow-1" ref={wrapper}>
+      {width ? (
+        width > 910 ? (
+          <SocialsGrid />
+        ) : (
+          <div>
+            <SocialsSlider />
+          </div>
+        )
+      ) : (
+        <Loading />
+      )}
     </div>
   );
 }

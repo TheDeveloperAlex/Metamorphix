@@ -1,5 +1,4 @@
 .navMobile {
-  font-size: 13px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -56,4 +55,16 @@
 .navDesktop > a:hover::after,
 .navDesktop > a.active::after {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .navMobile {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navMobile {
+    font-size: 16px;
+  }
 }

@@ -60,10 +60,9 @@ module.exports = {
         "red-switch": "#bd0000",
         "white-opacity-02": "rgba(255, 255, 255, 0.2)",
         "dark-red-card": "#140A09",
-        "red": "rgba(255, 0, 0)",
+        red: "rgba(255, 0, 0)",
         "button-red": "#BE0000",
-        "border-footer": "rgba(217, 217, 217, 0.10)"
-        
+        "border-footer": "rgba(217, 217, 217, 0.10)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,6 +82,11 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      screens: {
+        "360": "360px",
+        "480": "480px",
+        "720": "720px",
       },
     },
   },
