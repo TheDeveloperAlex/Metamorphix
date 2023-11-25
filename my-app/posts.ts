@@ -1,7 +1,7 @@
 export interface Post {
   title: string;
   description: string;
-  text: string;
+  file: string;
   slug: string;
   image: string;
   date: Date;
@@ -10,7 +10,7 @@ export interface Post {
 const posts: Post[] = [
   {
     date: new Date("October 25, 2023 22:47:00"),
-    text: "",
+    file: 'metamorphix-site.md',
     title: "Сайт Metamorphix",
     image: "/news/metamorphix-preview.png",
     description: "Lorem ipsum dolor sit amet, consectetur",
@@ -18,7 +18,7 @@ const posts: Post[] = [
   },
   {
     date: new Date("October 25, 2023 22:47:00"),
-    text: "",
+    file: "",
     title: "Сайт Metamorphix",
     image: "/news/metamorphix-preview.png",
     description: "Lorem ipsum dolor sit amet, consectetur",
