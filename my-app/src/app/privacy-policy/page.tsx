@@ -1,5 +1,5 @@
+import LinksPolicy from "@/components/LinkParser";
 import TxtParser from "@/components/TxtParser";
-import LinksPolicy from "../../components/LinkParser";
 
 export default async function PrivacyPolicy() {
   return (
