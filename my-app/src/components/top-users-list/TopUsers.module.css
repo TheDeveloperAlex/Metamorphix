@@ -11,3 +11,10 @@
 		margin-top: 5px;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.topUserCards {
+		width: calc(100% + 33px);
+		overflow-x: clip;
+	}
+}
