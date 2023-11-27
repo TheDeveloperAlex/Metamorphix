@@ -15,15 +15,16 @@ export default async function LinksPolicy({ filePath }: TXTprops) {
       {paragraphs.map((elem, index) => {
         const found = regex.exec(elem);
         return (
-          <Link
-            className="hover:text-white transition-all list-item my-1"
-            key={`link${index}`}
-            href={found ? `#${found[0]}` : "#"}
-          >
-            {elem}
-          </Link>
+          <li key={`link${index}`}>
+            <Link
+              className="hover:text-white transition-all my-1"
+              href={found ? `#${found[0]}` : "#"}
+            >
+              {elem}
+            </Link>
+          </li>
         );
-      })}
+    })}
     </ul>
-  );
+    );
 }
