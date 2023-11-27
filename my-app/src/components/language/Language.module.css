@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  color: var(--black-opacity-02);
+}
+
+.link a {
+  position: relative;
+  font-family: "TacticSans-Bld", sans-serif;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.linkDefault a:hover,
+.linkDefault a:active {
+  color: #fff;
+  cursor: pointer;
+}
+
+.delimiter {
+  width: 1px;
+  border-right: 2px solid var(--black-opacity-02);
+}
+
+.activeLink a {
+  color: #fff;
+  cursor: default;
+}
+
+.linkDefault a::after,
+.activeLink a::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--red-header);
+
+  transition: 0.3s ease-in-out;
+
+  width: 0;
+  height: 3px;
+
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.linkDefault a:hover::after,
+.activeLink a::after {
+  width: 100%;
+}
+
+.disabledLink a {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    gap: 4px;
+  }
+  .link,
+  .link a {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .delimiter {
+    height: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    gap: 6px;
+  }
+  .link,
+  .link a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .delimiter {
+    height: 20px;
+  }
+}

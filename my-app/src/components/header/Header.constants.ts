@@ -18,3 +18,18 @@ export const links: ILink[] = [
     label: "ПРО НАС",
   },
 ];
+
+export const linksRules: ILink[] = [
+  {
+    href: "/user-agreement",
+    label: "Условия пользовтаеля",
+  },
+  {
+    href: "/terms-of-service",
+    label: "Правила пользования",
+  },
+  {
+    href: "/privacy-policy",
+    label: "Политика кондефициальности",
+  },
+];

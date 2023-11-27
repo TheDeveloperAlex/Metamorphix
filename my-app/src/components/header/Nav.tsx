@@ -1,6 +1,6 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { links } from "./Header.constants";
+import { links, linksRules } from "./Header.constants";
 
 import style from "./Nav.module.css";
 
@@ -24,6 +24,20 @@ export default function Nav({ className, mobile, onOpenChange }: props) {
   return (
     <nav className={`${className} ${styleClass}`}>
       {links.map(({ href, label }) => {
+        const active: boolean = pathname === `${href}`;
+        return (
+          <Link
+            key={href}
+            href={href}
+            className={active ? style.active : ""}
+            onClick={onClick}
+          >
+            {label}
+          </Link>
+        );
+      })}
+      <div className={style.delimiter}></div>
+      {linksRules.map(({ href, label }) => {
         const active: boolean = pathname === `${href}`;
         return (
           <Link

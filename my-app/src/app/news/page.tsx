@@ -1,6 +1,6 @@
 import PostCard from "@/components/PostCard";
 import posts from "../../../posts";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer/index";
 
 export default function News() {
   return (
