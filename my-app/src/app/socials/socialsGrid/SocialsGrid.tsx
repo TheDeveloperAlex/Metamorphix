@@ -1,4 +1,4 @@
-import { socials } from "../socials";
+import { socials } from "@/linksData/linksData.contracts";
 import SocialsListItem from "../socialsListItem/index";
 import TopListItem from "../topListItem/index";
 

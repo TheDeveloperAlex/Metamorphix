@@ -13,11 +13,6 @@
   src: url("/fonts/tacticSans/TacticSansExd-BldIt.otf") format("opentype");
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 :root {
   --white-opacity-07: rgba(255, 255, 255, 0.7);
   --red-header: #ff1d1d;
@@ -110,6 +105,7 @@ body {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -125,10 +121,22 @@ body {
       ),
       url("/gatesOld.png");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-color: black;
+    background-attachment: fixed;
   }
 }
+
+@media screen and (max-width: 749px) {
+  body {
+    background-position: top center;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+  body {
+    background-position: 0% 0%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   body {
     background-image: linear-gradient(
@@ -139,6 +147,7 @@ body {
       ),
       url("/gates.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top right;
     background-color: black;
   }
@@ -153,4 +162,28 @@ body {
 .page-content {
   flex-grow: 1;
   position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .page-content {
+    margin-bottom: 40px;
+  }
+  .language {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-content {
+    margin-bottom: 30px;
+  }
+  .language {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 40px 10px;
+  }
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
 }

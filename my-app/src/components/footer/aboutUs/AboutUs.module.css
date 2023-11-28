@@ -1,0 +1,29 @@
+.wrapper {
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  padding: 0 20px;
+  margin-bottom: 27px;
+
+  font-family: "TacticSans-Bld", sans-serif;
+}
+
+.paragraph {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  max-width: 472px;
+}
+
+.button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media screen and (min-width: 480px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

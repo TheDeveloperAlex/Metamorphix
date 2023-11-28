@@ -1,5 +1,7 @@
 import Link from "../../../../node_modules/next/link";
-import { socialsLinksData, typeSocials } from "../socials";
+
+import { socialsLinksImagesData } from "@/linksData/linksData.contracts";
+import { typeSocials } from "@/linksData/linksData.typings";
 
 import { useSwiperSlide } from "swiper/react";
 
@@ -26,10 +28,10 @@ export default function SocialsListItem({ type }: props) {
   const swiperSlide = useSwiperSlide();
 
   const className: any = getClassName(type);
-  const src: string = socialsLinksData.getItemData(type)?.img;
-  const alt: string = socialsLinksData.getItemData(type)?.alt;
-  const label: string = socialsLinksData.getItemData(type)?.label;
-  const link: string = socialsLinksData.getItemData(type)?.link;
+  const src: string = socialsLinksImagesData.getItemData(type)?.img;
+  const alt: string = socialsLinksImagesData.getItemData(type)?.alt;
+  const label: string = socialsLinksImagesData.getItemData(type)?.label;
+  const link: string = socialsLinksImagesData.getItemData(type)?.link;
   const contentClassName = swiperSlide?.isActive ? style.contentActive : "";
 
   return (
