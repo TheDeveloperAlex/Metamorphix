@@ -165,15 +165,25 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
+  .page-content {
+    margin-bottom: 40px;
+  }
   .language {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .page-content {
+    margin-bottom: 30px;
+  }
   .language {
     display: flex;
     justify-content: flex-end;
     padding: 15px 40px 10px;
   }
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
 }

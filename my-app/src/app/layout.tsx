@@ -28,9 +28,9 @@ export default function RootLayout({
         <Header />
         <div className="page-content">{children}</div>
         <Footer />
-        <div className="language">
+        {/* <div className="language">
           <Language />
-        </div>
+        </div> */}
       </body>
     </html>
   );

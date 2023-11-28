@@ -1,13 +1,15 @@
 import { usePathname } from "next/navigation";
+
+import { headerLinks, informationLinks } from "@/linksData/linksData.contracts";
+
 import Link from "next/link";
-import { links, linksRules } from "./Header.constants";
 
 import style from "./Nav.module.css";
 
 interface props {
-  className: string | undefined;
-  mobile: boolean | undefined;
-  onOpenChange: Function | undefined;
+  className?: string;
+  mobile?: boolean;
+  onOpenChange?: Function;
 }
 
 export default function Nav({ className, mobile, onOpenChange }: props) {
@@ -23,7 +25,7 @@ export default function Nav({ className, mobile, onOpenChange }: props) {
 
   return (
     <nav className={`${className} ${styleClass}`}>
-      {links.map(({ href, label }) => {
+      {headerLinks.map(({ href, label }) => {
         const active: boolean = pathname === `${href}`;
         return (
           <Link
@@ -37,7 +39,7 @@ export default function Nav({ className, mobile, onOpenChange }: props) {
         );
       })}
       <div className={style.delimiter}></div>
-      {linksRules.map(({ href, label }) => {
+      {informationLinks.map(({ href, label }) => {
         const active: boolean = pathname === `${href}`;
         return (
           <Link
