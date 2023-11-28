@@ -1,14 +1,14 @@
+import LinksPolicy from "@/components/LinkParser";
 import TxtParser from "@/components/TxtParser";
-import LinksPolicy from "../../components/LinkParser";
 
 export default async function PrivacyPolicy() {
   return (
     <div
-      className="flex flex-col items-center h-full gap-[90px] pt-[80px] pb-[20px] relative w-full top-0 text-white"
+      className="flex flex-col items-center h-full pb-[20px] relative w-full top-0 text-white"
       style={{ fontFamily: "TacticSans-Bld, sans-serif" }}
     >
-      <h1 className="text-[30px] md:text-[40px] text-center leading-[40px] text-white relative">
-        <span className="absolute w-[80%] md:w-[554px] h-[66px] bg-red-header left-1/2 -translate-x-1/2 bottom-0 -z-10 blur-[100px]" />
+      <h1 className="text-[30px] md:text-[40px] text-center leading-[40px] text-white relative py-[90px]">
+        <span className="absolute w-[80%] md:w-[554px] h-[66px] bg-red-header left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-10 blur-[100px]" />
         ПОЛИТИКА
         <br />
         <span className="sm:text-[36px] md:text-[48px] text-red-header">

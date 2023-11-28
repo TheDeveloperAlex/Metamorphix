@@ -15,7 +15,7 @@ export const informationLinks: ILink[] = [
     label: "Условия пользовтаеля",
   },
   {
-    href: "/terms-of-service",
+    href: "/terms-of-use",
     label: "Правила пользования",
   },
   {

@@ -15,7 +15,7 @@ export default function Footer() {
     case "/socials":
     case "/news":
     case "/user-agreement":
-    case "/terms-of-service":
+    case "/terms-of-use":
     case "/privacy-policy":
       return (
         <div>

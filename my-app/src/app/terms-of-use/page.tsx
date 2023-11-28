@@ -4,11 +4,11 @@ import LinksPolicy from "../../components/LinkParser";
 export default async function TermsOfService() {
   return (
     <div
-      className="flex flex-col items-center h-full gap-[90px] pt-[80px] pb-[20px] top-0 text-white"
+      className="flex flex-col items-center h-full pb-[20px] relative w-full top-0 text-white"
       style={{ fontFamily: "TacticSans-Bld, sans-serif" }}
     >
-      <h1 className="max-[480px]:text-[30px] text-[34px] md:text-[40px] text-center leading-[40px] text-white relative">
-        <span className="absolute  w-[80%] md:w-[554px] h-[66px] bg-red-header left-1/2 -translate-x-1/2 bottom-0 -z-10 blur-[100px]" />
+      <h1 className="text-[30px] md:text-[40px] text-center leading-[40px] text-white relative py-[90px]">
+        <span className="absolute  w-[80%] md:w-[554px] h-[66px] bg-red-header left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-10 blur-[100px]" />
         УСЛОВИЯ
         <br />
         <span className="max-[480px]:text-[36px] text-red-header text-[40px] md:text-[48px]">
