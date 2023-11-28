@@ -21,11 +21,8 @@ export default function Header() {
   useEffect(() => {
     if (!wrapper || !wrapper.current) return;
 
-    console.log(wrapper);
-
     const handleResize = () => {
       const size = wrapper?.current?.clientWidth;
-      console.log({ open, size });
 
       if (size > 1023 && open) {
         setOpen(false);
