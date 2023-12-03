@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import Header from "@/components/header/Header";
-
 import Language from "@/components/language/Language";
+import Footer from "@/components/footer/index";
 
 import "./globals.css";
 import "./scroll.css";
@@ -27,9 +27,10 @@ export default function RootLayout({
       <body>
         <Header />
         <div className="page-content">{children}</div>
-        <div>
+        <Footer />
+        {/* <div className="language">
           <Language />
-        </div>
+        </div> */}
       </body>
     </html>
   );

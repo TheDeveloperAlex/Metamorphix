@@ -1,4 +1,4 @@
-import { socials } from "../socials";
+import { socials } from "@/linksData/linksData.contracts";
 import SocialsListItem from "../socialsListItem/index";
 import TopListItem from "../topListItem/index";
 
@@ -10,7 +10,7 @@ export default function SocialsGrid() {
       {socials.map((type) => {
         return (
           <div className={style.gridItem} key={type}>
-            <div className="mb-[20px]">
+            <div className="mb-[30px]">
               <TopListItem type={type} />
             </div>
             <SocialsListItem type={type} />

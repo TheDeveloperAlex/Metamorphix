@@ -56,7 +56,6 @@
     font-size: 46px;
     margin-left: 48px;
   }
-
 }
 @media (max-width: 1024px) {
   .shape {
@@ -70,11 +69,5 @@
   .title {
     margin-bottom: 20px;
     font-size: 64px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .title {
-    margin-bottom: 30px;
   }
 }

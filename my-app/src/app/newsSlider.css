@@ -1,0 +1,17 @@
+.swiper.newsSlider {
+  padding-bottom: 24px;
+}
+
+.newsSlider .swiper-pagination {
+  bottom: 0px !important;
+}
+
+.newsSlider .swiper-pagination-bullet {
+  background: rgb(255, 255, 255, 0.2);
+  z-index: 2;
+  opacity: 1;
+}
+
+.newsSlider .swiper-pagination-bullet-active {
+  background: var(--red-header);
+}

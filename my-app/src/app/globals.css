@@ -1,7 +1,8 @@
 @import url("https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap");
 
-@import "./slider.css";
+@import "./socialsSlider.css";
+@import "./newsSlider.css";
 
 @font-face {
   font-family: "TacticSans-Bld";
@@ -11,10 +12,6 @@
 @font-face {
   font-family: "TacticSansExd-BldIt";
   src: url("/fonts/tacticSans/TacticSansExd-BldIt.otf") format("opentype");
-}
-
-html, body {
-  overflow-x: hidden;
 }
 
 :root {
@@ -66,6 +63,8 @@ html, body {
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    --red-header: #ff1d1d;
   }
 
   .dark {
@@ -109,6 +108,7 @@ html, body {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -124,10 +124,22 @@ body {
       ),
       url("/gatesOld.png");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-color: black;
+    background-attachment: fixed;
   }
 }
+
+@media screen and (max-width: 749px) {
+  body {
+    background-position: top center;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+  body {
+    background-position: 0% 0%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   body {
     background-image: linear-gradient(
@@ -138,6 +150,7 @@ body {
       ),
       url("/gates.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: top right;
     background-color: black;
   }
@@ -152,4 +165,28 @@ body {
 .page-content {
   flex-grow: 1;
   position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .page-content {
+    margin-bottom: 40px;
+  }
+  .language {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-content {
+    margin-bottom: 70px;
+  }
+  .language {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 40px 10px;
+  }
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
 }

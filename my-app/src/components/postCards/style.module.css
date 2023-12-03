@@ -1,0 +1,17 @@
+.imageComingSoon {
+  background: radial-gradient(#ff1d1d, black);
+}
+
+@media screen and (max-width: 359px) {
+  .wrapper {
+    width: 226px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .wrapper {
+    width: 323px;
+    height: 449px;
+  }
+}

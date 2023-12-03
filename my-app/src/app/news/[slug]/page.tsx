@@ -4,7 +4,6 @@ import { splitTitle } from "./(helpers)/splitTitle";
 import Image from "next/legacy/image";
 import path from "path";
 import fs from "fs";
-import parser from "html-react-parser";
 import { Remarkable } from "remarkable";
 import styles from "./page.module.css";
 
@@ -41,10 +40,15 @@ export default async function ProjectsNews({ params: { slug } }: PageProps) {
       </h1>
       <div className={styles.postGrid}>
         <div className={styles.image}>
-          <img src={post.image}/>
+          <img src={post.image} />
         </div>
         <div className={styles.post}>
-          <div className={styles.content}>{parser(raw)}</div>
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{
+              __html: raw,
+            }}
+          ></div>
           <span className={"text-red-header " + styles.gTop}>Г</span>
           <span className={"text-red-header " + styles.gBottom}>Г</span>
         </div>
