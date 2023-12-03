@@ -28,6 +28,7 @@ export default function SocialsLinks() {
   const buttons = socialsLinksData.map(({ label, link }) => {
     return (
       <Link
+        key={label}
         href={link}
         target={"_blank"}
         className={buttonVariants({

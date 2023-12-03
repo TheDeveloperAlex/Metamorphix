@@ -1,9 +1,11 @@
 import Image from "next/image";
-import { Skeleton } from "./ui/skeleton";
-import { Button, buttonVariants } from "./ui/button";
+import { Skeleton } from "../ui/skeleton";
+import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
-import { Post } from "../../posts";
+import { Post } from "../../../posts";
 import { cn } from "@/lib/utils";
+
+import style from "./style.module.css";
 
 export default function PostCard({
   date,
@@ -13,7 +15,9 @@ export default function PostCard({
   slug,
 }: Post) {
   return (
-    <div className="w-[323px] bg-dark-red-card text-white-opacity-02 rounded-lg flex flex-col">
+    <div
+      className={` ${style.wrapper} text-white-opacity-02 bg-dark-red-card rounded-lg overflow-hidden flex flex-col`}
+    >
       <div className="relative h-[166px]">
         <Skeleton className="w-full h-full bg-black bg-opacity-50" />
         <Image src={image} alt="Preview" fill />
