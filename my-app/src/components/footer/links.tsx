@@ -60,7 +60,8 @@ export const links: Links = [
         url: "/socials",
       },
       {
-        name: "Новости сервера",
+        // name: "Новости сервера",
+        name: "Наши проекты",
         url: "/news",
       },
     ],

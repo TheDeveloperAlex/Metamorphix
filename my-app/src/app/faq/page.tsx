@@ -4,7 +4,7 @@ import FAQAcordionMobile from "./FAQAccordionMobile";
 
 export default function FAQ() {
   return (
-    <div className="flex flex-col leading-[normal] items-center max-w-[1680px] m-auto max-720:pt-[80px] pt-[104px] h-full max-720:gap-12">
+    <div className="flex flex-col leading-[normal] items-center max-w-[1680px] m-auto max-720:pt-[80px] pt-[100px] h-full max-720:gap-12">
       <h1
         className="text-center leading-[40px] text-white relative max-720:text-[30px] text-[40px]"
         style={{ fontFamily: "TacticSans-Bld, sans-serif" }}

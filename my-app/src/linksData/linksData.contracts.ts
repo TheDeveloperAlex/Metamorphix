@@ -5,7 +5,7 @@ import {
   typeSocials,
 } from "./linksData.typings";
 
-import telegramQR from "../../public/discordQR.png";
+import telegramQR from "../../public/telegramQR.png";
 import discordQR from "../../public/discordQR.png";
 import instagramQR from "../../public/instagramQR.png";
 
@@ -27,7 +27,11 @@ export const informationLinks: ILink[] = [
 export const navigationLinks: ILink[] = [
   { href: "/", label: "Главная" },
   { href: "/socials", label: "Переходы" },
-  { href: "/news", label: "Новости сервера" },
+  {
+    href: "/news",
+    // label: "Новости сервера"
+    label: "Наши проекты",
+  },
 ];
 
 export const contactsLinks: ILink[] = [
