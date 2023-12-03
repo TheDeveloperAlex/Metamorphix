@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import posts from "../../../../posts";
 import { splitTitle } from "./(helpers)/splitTitle";
-import Image from "next/legacy/image";
 import path from "path";
 import fs from "fs";
 import { Remarkable } from "remarkable";
@@ -19,7 +18,7 @@ export default async function ProjectsNews({ params: { slug } }: PageProps) {
   let post = posts.find((elem) => elem.slug === slug);
 
   if (!post) return notFound();
-  const [mainHeader, secondHeader] = splitTitle(post.title);
+  const [mainHeader, secondHeader] = splitTitle(post.title!);
 
   const filePath = path.join(process.cwd(), "src", "posts", post.file);
   const policy = fs.readFileSync(filePath, "utf8");
@@ -38,19 +37,15 @@ export default async function ProjectsNews({ params: { slug } }: PageProps) {
           {secondHeader}
         </span>
       </h1>
-      <div className={styles.postGrid}>
-        <div className={styles.image}>
-          <img src={post.image} />
-        </div>
+      <div className={styles.postWrapper}>
         <div className={styles.post}>
+          <img className={styles.mainImage} src={post.image} />
           <div
             className={styles.content}
             dangerouslySetInnerHTML={{
               __html: raw,
             }}
           ></div>
-          <span className={"text-red-header " + styles.gTop}>Г</span>
-          <span className={"text-red-header " + styles.gBottom}>Г</span>
         </div>
       </div>
     </div>

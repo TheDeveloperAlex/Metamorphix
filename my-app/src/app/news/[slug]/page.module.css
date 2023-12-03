@@ -1,6 +1,7 @@
 .post {
-    max-height: 520px;
+    max-width: 800px;
     position: relative;
+    margin:auto;
 }
 
 .content {
@@ -11,22 +12,24 @@
     overflow-y: auto;
 }
 
-.image img{
+.mainImage {
     width: 100%;
+    height: auto;
 }
 
-.postGrid {
-    gap: 36px;
-    max-width: 1660px;
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+.postWrapper {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px 42px;
+    border-radius: 16px;
     margin:auto;
     margin-top: 36px;
 }
 
-.post img {
-    width: 100%;
-    margin: auto;
+.content img {
+    max-width: 100%;
+    height: 360px;
+    object-fit: contain;
+    margin: 12px auto;
 }
 
 .post strong {
@@ -51,46 +54,27 @@
     list-style: circle;
 }
 
-.gTop {
-    position: absolute;
-    transform: rotate(90deg);
-    font-family: Gilroy;
-    font-size: 48px;
-    font-weight: 600;
-    top: -40px;
-    right: -5px;
-}
-
-.gBottom {
-    position: absolute;
-    transform: rotate(-90deg);
-    font-family: Gilroy;
-    font-size: 48px;
-    font-weight: 600;
-    bottom: -40px;
-    left: -5px;
-}
-
 @media (max-width: 1080px) {
     .postGrid {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .image {
-        width: 100%;
-    }
-    .gBottom, .gTop {
-        display: none;
-    }
-
-    .post img {
-        width: 60%;
-    }
 }
 
 @media (max-width: 720px) {
     .content {
         font-size: 15px;
+    }
+    .postWrapper {
+        padding: 0 0;
+        overflow: hidden;
+    }
+
+    .content img {
+        max-width: 100%;
+        height: 220px;
+        object-fit: contain;
+        margin: 12px auto;
     }
 }
