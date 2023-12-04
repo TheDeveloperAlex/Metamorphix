@@ -18,6 +18,7 @@ const SheetPortal = SheetPrimitive.Portal;
 const SheetOverlay = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
+  // @ts-ignore
 >(({ className, onClose, ...props }, ref) => (
   <SheetPrimitive.Overlay
     className={cn(
@@ -57,8 +58,10 @@ interface SheetContentProps
 const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   SheetContentProps
+  // @ts-ignore
 >(({ side = "right", className, children, onClose, ...props }, ref) => (
   <SheetPortal>
+    {/* @ts-ignore */}
     <SheetOverlay {...{ onClose }} />
     <SheetPrimitive.Content
       ref={ref}

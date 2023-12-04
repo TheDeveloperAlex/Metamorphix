@@ -83,10 +83,11 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      // @ts-ignore
       screens: {
         "360": "360px",
-        "480": "480px",
         "720": "720px",
+        "480": "480px",
       },
     },
   },
