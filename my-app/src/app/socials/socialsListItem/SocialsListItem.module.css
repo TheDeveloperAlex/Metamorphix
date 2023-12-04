@@ -12,6 +12,7 @@
   font-weight: 600;
   line-height: 34px;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .button {

@@ -62,7 +62,7 @@ export default function TopListItem({ type }: props) {
       <div className={style.square} style={{ background }}>
         {icon}
       </div>
-      <p className="font-['TacticSans-Bld'] text-white min-[768px]: text-[20px] ">
+      <p className="font-['TacticSans-Bld'] text-white min-[768px]: text-[20px]">
         {label}
       </p>
     </div>

@@ -9,10 +9,10 @@ export default async function TermsOfService() {
     >
       <h1 className="text-[30px] md:text-[40px] text-center leading-[40px] text-white relative py-[90px]">
         <span className="absolute  w-[80%] md:w-[554px] h-[66px] bg-red-header left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 -z-10 blur-[100px]" />
-        УСЛОВИЯ
+        ПРАВИЛА
         <br />
         <span className="max-[480px]:text-[36px] text-red-header text-[40px] md:text-[48px]">
-          ПОЛЬЗОВАТЕЛЯ
+          ПОЛЬЗОВАНИЯ
         </span>
       </h1>
       <div

@@ -1,6 +1,7 @@
 import FAQCard from "./FAQCard";
 import FAQItems from "./FAQItems";
 import FAQAcordionMobile from "./FAQAccordionMobile";
+import { AcrodionToggle } from "./FAQCardMobile";
 
 export default function FAQ() {
   return (
@@ -17,6 +18,7 @@ export default function FAQ() {
         </span>
       </h1>
       <FAQAcordionMobile />
+      <AcrodionToggle />
     </div>
   );
 }

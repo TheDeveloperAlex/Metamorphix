@@ -18,7 +18,6 @@ const posts: Post[] = [
     slug: "saitor-shop",
   },
   {
-    date: new Date("October 25, 2023 22:47:00"),
     file: "",
     title: "Сайт Bitrades Technologies",
     description: "Онлайн платформа для предугадывания курса криптовалют",

@@ -12,7 +12,7 @@ import instagramQR from "../../public/instagramQR.png";
 export const informationLinks: ILink[] = [
   {
     href: "/user-agreement",
-    label: "Условия пользовтаеля",
+    label: "Пользовательское соглашение",
   },
   {
     href: "/terms-of-use",
@@ -20,7 +20,7 @@ export const informationLinks: ILink[] = [
   },
   {
     href: "/privacy-policy",
-    label: "Политика кондефициальности",
+    label: "Политика конфиденциальности",
   },
 ];
 
