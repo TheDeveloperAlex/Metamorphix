@@ -22,6 +22,7 @@ export default function Header() {
     if (!wrapper || !wrapper.current) return;
 
     const handleResize = () => {
+      // @ts-ignore
       const size = wrapper?.current?.clientWidth;
 
       if (size > 1023 && open) {
@@ -49,6 +50,7 @@ export default function Header() {
               onClick={onOpenChange}
             />
           </SheetTrigger>
+          {/* @ts-ignore */}
           <SheetContent onClose={() => setOpen(false)}>
             <Nav mobile onOpenChange={onOpenChange} />
             <div className={style.mobileDelimiter}></div>

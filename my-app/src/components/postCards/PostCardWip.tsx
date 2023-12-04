@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Post } from "../../../posts";
 import { Skeleton } from "../ui/skeleton";
 
@@ -25,15 +24,22 @@ export default function PostCardWip({
         {image ? (
           <>
             <Skeleton className="w-full h-full bg-black bg-opacity-50" />
-            <Image
+            <img
               src={image}
-              className={"object-cover bg-top blur"}
+              alt="Preview"
+              className={
+                "absolute top-0 left-0 w-full h-full object-cover bg-center"
+              }
+            />
+            {/* <Image
+              src={image}
+              className={"object-cover bg-center blur"}
               alt="Preview"
               fill
-            />
+            /> */}
           </>
         ) : (
-          <div className="relative w-full h-full flex justify-center items-center overflow-hidden">
+          <div className="relative w-full h-[166px] flex justify-center items-center overflow-hidden">
             <div
               className={`bg-gradient-to-r ${style.imageComingSoon} blur-lg  w-full h-full absolute top-0 left-0`}
             ></div>
@@ -41,15 +47,13 @@ export default function PostCardWip({
           </div>
         )}
       </div>
-      <div
-        className={`pt-[15px] max-[359px]:pb-[31px] min-[360px]:pb-[50px] relative text-[12px] !leading-normal grow flex flex-col`}
-      >
-        <div className="text-right">{currentDate}</div>
-        <h2 className="max-[359px]:mb-[15px] min-[360px]:mb-[25px] text-[16px] text-white">
-          {currentTitle}
-        </h2>
-        <div className="grow flex flex-col gap-[25px]">
-          <p className="overflow-clip shrink max-h-[120px]">
+      <div className={style.content}>
+        <div className="max-[359px]:text-[12px] min-[360px]:text-[14px] text-right mb-[4px]">
+          {currentDate}
+        </div>
+        <h2 className={style.title}>{currentTitle}</h2>
+        <div className={style.buttonWrapper}>
+          <p className="max-[359px]:text-[12px] min-[360px]:text-[14px] overflow-clip shrink max-h-[120px]">
             {currentDescription}
           </p>
           <button

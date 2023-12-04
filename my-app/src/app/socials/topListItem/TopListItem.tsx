@@ -1,7 +1,8 @@
 import Discord from "@/components/icons/Discord";
 import Telegram from "@/components/icons/Telegram";
 import { Instagram } from "lucide-react";
-import { typeSocials } from "../socials";
+// import { typeSocials } from "../socials";
+import { typeSocials } from "../../../linksData/linksData.typings";
 
 // import { typeTopList } from "./TopList.interface";
 

@@ -8,12 +8,13 @@ import NewsSlider from "./slider/index";
 
 export default function NewsBottom() {
   const wrapper = useRef(null);
-  const [width, setWidth] = useState(null);
+  const [width, setWidth] = useState<any>(320);
 
   useEffect(() => {
-    if (!wrapper || !wrapper.current) return;
+    if (!wrapper || !wrapper?.current) return;
 
     const handleResize = () => {
+      // @ts-ignore
       const size = wrapper?.current?.clientWidth;
       setWidth(size);
     };
@@ -26,6 +27,7 @@ export default function NewsBottom() {
       window.removeEventListener("resize", handleResize);
     };
   }, [wrapper]);
+
   return (
     <div className="w-full h-full grow-1" ref={wrapper}>
       {width ? (

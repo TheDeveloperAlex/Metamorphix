@@ -9,29 +9,20 @@ import FooterBottomPart from "./footerBottomPart/FooterBottomPart";
 export default function Footer() {
   const pathname = usePathname();
 
-  switch (pathname) {
-    case "/":
-      return <></>;
-    case "/socials":
-    case "/news":
-    case "/user-agreement":
-    case "/terms-of-use":
-    case "/privacy-policy":
-      return (
-        <div>
-          <AboutUs />
-          <FooterBottomPart />
-        </div>
-      );
-    case "/faq":
-      return (
-        <div>
-          <SocialsLinks />
-          <FooterBottomPart />
-        </div>
-      );
-
-    default:
-      return <></>;
+  if (pathname === "/") return <></>;
+  if (pathname === "/faq") {
+    return (
+      <div>
+        <SocialsLinks />
+        <FooterBottomPart />
+      </div>
+    );
   }
+
+  return (
+    <div>
+      <AboutUs />
+      <FooterBottomPart />
+    </div>
+  );
 }

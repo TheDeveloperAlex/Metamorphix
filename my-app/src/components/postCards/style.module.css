@@ -2,10 +2,40 @@
   background: radial-gradient(#ff1d1d, black);
 }
 
+.title {
+  color: #fff;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 @media screen and (max-width: 359px) {
   .wrapper {
-    width: 226px;
-    height: 300px;
+    width: 270px;
+    height: 370px;
+  }
+  .content {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .buttonWrapper p {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 14px;
+    margin-bottom: 15px;
   }
 }
 
@@ -13,5 +43,14 @@
   .wrapper {
     width: 323px;
     height: 449px;
+  }
+  .content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 25px;
   }
 }

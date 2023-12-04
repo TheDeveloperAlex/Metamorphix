@@ -14,6 +14,7 @@ export default function Socials() {
     if (!wrapper || !wrapper.current) return;
 
     const handleResize = () => {
+      // @ts-ignore
       const size = wrapper?.current?.clientWidth;
       setWidth(size);
     };
