@@ -12,9 +12,11 @@ export default function AboutUs() {
         <AvatarFallback>M</AvatarFallback>
       </Avatar>
       <p className={style.paragraph}>
-        <span className="text-white">это DIscord сообщество</span> где ты можешь
-        найти себе друзей или колег. Наш дискорд сервер предоставит тебе
-        комфортную работу в каждой из сфер
+        <span className="text-white">Мы - комьюнити</span> заряженных молодых
+        парней, которые развиваются 24/7, помогают друг другу и никогда не
+        сдаются.
+        <br />
+        Если ты хочешь превзойти свои горизонты - присоединяйся, мы ждём тебя
       </p>
       <Link
         href="/faq"
