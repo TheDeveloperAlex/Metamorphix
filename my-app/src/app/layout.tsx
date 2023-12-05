@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Мы - комьюнити заряженных молодых парней, которые развиваются 24/7, помогают друг другу и никогда не сдаются.Если ты хочешь превзойти свои горизонты - присоединяйся, мы ждём тебя",
     images: [
       {
-        url: "https://nextjs.org/og.png",
+        url: "https://metamorphix-yv66-2oml64j2y-thedeveloperalex.vercel.app/preview.png",
         width: 1200,
         height: 630,
       },
