@@ -15,7 +15,13 @@ export const metadata: Metadata = {
     title: "Metamorphix",
     description:
       "Мы - комьюнити заряженных молодых парней, которые развиваются 24/7, помогают друг другу и никогда не сдаются.Если ты хочешь превзойти свои горизонты - присоединяйся, мы ждём тебя",
-    images: "/preview.png",
+    images: [
+      {
+        url: "https://nextjs.org/og.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   authors: [
     { name: "TheDeveloperAlex", url: "https://github.com/TheDeveloperAlex" },
