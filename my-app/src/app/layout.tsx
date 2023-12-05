@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   title: "Metamorphix",
   description:
     "Мы - комьюнити заряженных молодых парней, которые развиваются 24/7, помогают друг другу и никогда не сдаются.Если ты хочешь превзойти свои горизонты - присоединяйся, мы ждём тебя",
-  authors: [
-    { name: "TheDeveloperAlex", url: "https://github.com/TheDeveloperAlex" },
-    { name: "Mykolai Skydan", url: "https://github.com/ewqwdd" },
-  ],
   openGraph: {
     title: "Metamorphix",
     description:
       "Мы - комьюнити заряженных молодых парней, которые развиваются 24/7, помогают друг другу и никогда не сдаются.Если ты хочешь превзойти свои горизонты - присоединяйся, мы ждём тебя",
     images: "/preview.png",
   },
+  authors: [
+    { name: "TheDeveloperAlex", url: "https://github.com/TheDeveloperAlex" },
+    { name: "Mykolai Skydan", url: "https://github.com/ewqwdd" },
+  ],
 };
 
 export default function RootLayout({
