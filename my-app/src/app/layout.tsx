@@ -15,18 +15,12 @@ export const metadata: Metadata = {
     title: "Metamorphix",
     description:
       "Мы - комьюнити заряженных молодых парней, которые развиваются 24/7, помогают друг другу и никогда не сдаются.Если ты хочешь превзойти свои горизонты - присоединяйся, мы ждём тебя",
-    images: [
-      {
-        url: "https://metamorphix-yv66-2oml64j2y-thedeveloperalex.vercel.app/preview.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: "https://i.imgur.com/reIcIB6.png",
   },
-  authors: [
-    { name: "TheDeveloperAlex", url: "https://github.com/TheDeveloperAlex" },
-    { name: "Mykolai Skydan", url: "https://github.com/ewqwdd" },
-  ],
+  // authors: [
+  //   { name: "TheDeveloperAlex", url: "https://github.com/TheDeveloperAlex" },
+  //   { name: "Mykolai Skydan", url: "https://github.com/ewqwdd" },
+  // ],
 };
 
 export default function RootLayout({
