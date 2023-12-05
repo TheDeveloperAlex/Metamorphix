@@ -54,7 +54,7 @@ export default function Header() {
           <SheetContent onClose={() => setOpen(false)}>
             <Nav mobile onOpenChange={onOpenChange} />
             <div className={style.mobileDelimiter}></div>
-            <Language />
+            {/* <Language /> */}
           </SheetContent>
         </Sheet>
       </div>
