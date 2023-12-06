@@ -15,8 +15,11 @@ export default function AboutUs() {
         </div>
       </div>
       <Link href="/faq" className={`relative ${classes.link}`}>
-        <div className={`${classes.button}`} />
-        <span className="absolute top-[14px] left-[5px] text-[20px]">
+        <div className={`${classes.button}`}></div>
+        <span
+          className="absolute  text-[20px] z-[2]"
+          style={{ whiteSpace: "nowrap" }}
+        >
           ПРО НАС
         </span>
         <div className={classes.greenLighter}>
