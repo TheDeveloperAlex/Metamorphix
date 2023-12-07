@@ -14,7 +14,7 @@ export default function PostCard({
 }: Post) {
   return (
     <div
-      className={` ${style.wrapper} text-white-opacity-02 bg-dark-red-card rounded-lg overflow-hidden flex flex-col`}
+      className={` ${style.wrapper} bg-dark-red-card rounded-lg overflow-hidden flex flex-col`}
     >
       <div className="relative h-[166px]">
         <Skeleton className="w-full h-full bg-black bg-opacity-50" />
@@ -25,19 +25,19 @@ export default function PostCard({
             "absolute top-0 left-0 w-full h-full object-cover bg-center"
           }
         />
-        {/* <Image
-          src={image}
-          alt="Preview"
-          fill
-          className={"object-cover bg-center"}
-        /> */}
       </div>
       <div className={style.content}>
-        <div className="max-[359px]:text-[12px] min-[360px]:text-[14px] text-right mb-[4px]">
+        <div
+          className="max-[359px]:text-[12px] min-[360px]:text-[14px] text-right mb-[4px]"
+          style={{ color: "rgba(255,255,255,0.4)" }}
+        >
           {date?.toLocaleDateString()}
         </div>
         <h2 className={style.title}>{title}</h2>
-        <p className="max-[359px]:text-[12px] min-[360px]:text-[14px] overflow-clip shrink max-h-[120px]">
+        <p
+          className="max-[359px]:text-[12px] min-[360px]:text-[14px] overflow-clip shrink max-h-[120px]"
+          style={{ color: "rgba(255,255,255,0.4)" }}
+        >
           {description}
         </p>
         <Link

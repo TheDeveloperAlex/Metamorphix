@@ -18,7 +18,7 @@ export default function PostCardWip({
 
   return (
     <div
-      className={` ${style.wrapper} text-white-opacity-02 bg-dark-red-card rounded-lg overflow-hidden flex flex-col`}
+      className={` ${style.wrapper}  bg-dark-red-card rounded-lg overflow-hidden flex flex-col`}
     >
       <div className="relative h-[166px]">
         {image ? (
@@ -31,12 +31,6 @@ export default function PostCardWip({
                 "absolute top-0 left-0 w-full h-full object-cover bg-center"
               }
             />
-            {/* <Image
-              src={image}
-              className={"object-cover bg-center blur"}
-              alt="Preview"
-              fill
-            /> */}
           </>
         ) : (
           <div className="relative w-full h-[166px] flex justify-center items-center overflow-hidden">
@@ -48,12 +42,18 @@ export default function PostCardWip({
         )}
       </div>
       <div className={style.content}>
-        <div className="max-[359px]:text-[12px] min-[360px]:text-[14px] text-right mb-[4px]">
+        <div
+          className="max-[359px]:text-[12px] min-[360px]:text-[14px] text-right mb-[4px]"
+          style={{ color: "rgba(255,255,255,0.4)" }}
+        >
           {currentDate}
         </div>
         <h2 className={style.title}>{currentTitle}</h2>
         <div className={style.buttonWrapper}>
-          <p className="max-[359px]:text-[12px] min-[360px]:text-[14px] overflow-clip shrink max-h-[120px]">
+          <p
+            className="max-[359px]:text-[12px] min-[360px]:text-[14px] overflow-clip shrink max-h-[120px]"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
             {currentDescription}
           </p>
           <button
