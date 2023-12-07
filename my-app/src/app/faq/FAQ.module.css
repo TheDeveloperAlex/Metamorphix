@@ -1,4 +1,22 @@
-.accordionItem {
+.content[data-state="open"] {
+  animation: slideDown 250ms ease-out;
+}
+.content[data-state="closed"] {
+  animation: slideUp 250ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 10%;
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 10%;
+    transform: translateY(-1rem);
+  }
 }
 
 .icon {

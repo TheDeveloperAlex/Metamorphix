@@ -8,14 +8,18 @@ import { FAQCardProps } from "./FAQCard";
 import style from "./FAQ.module.css";
 import Image from "next/image";
 
-export const AcrodionToggle = () => <><div className="absolute right-10 top-2 peer h-2 w-2 bg-transparent"></div><div className="absolute hover:block w-20 h-20 right-10 top-4 peer-hover:block hidden"><Image fill alt='icon' src={'/accordion-icon.png'}/></div></>
+export const AcrodionToggle = () => (
+  <>
+    <div className="absolute right-10 top-2 peer h-2 w-2 bg-transparent"></div>
+    <div className="absolute hover:block w-20 h-20 right-10 top-4 peer-hover:block hidden">
+      <Image fill alt="icon" src={"/accordion-icon.png"} />
+    </div>
+  </>
+);
 
 export default function FAQCardMobile({ index, text, title }: FAQCardProps) {
   return (
-    <AccordionItem
-      value={`${index}`}
-      className={` 720:py-2 ${style.accordionItem}`}
-    >
+    <AccordionItem value={`${index}`} className={` 720:py-2 ${style.item}`}>
       <AccordionTrigger
         className={`px-[5px] text-white  hover:no-underline ${style.noUnderline}`}
       >
