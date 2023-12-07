@@ -114,8 +114,25 @@ body {
   flex-direction: column;
 }
 
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (max-width: 1023px) {
-  body {
+  body::before {
     background-image: linear-gradient(
         90deg,
         #000 0.15%,
@@ -123,14 +140,12 @@ body {
         #0b0005 195.9%
       ),
       url("/gatesOld.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 }
 
 @media screen and (max-width: 749px) {
   body {
-    background-position: top center;
+    background-position: center;
   }
 }
 
@@ -141,7 +156,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
+  body::before {
     background-image: linear-gradient(
         90deg,
         #000 0.15%,
@@ -149,10 +164,8 @@ body {
         #0b0005 195.9%
       ),
       url("/gates.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
     background-position: top right;
-    background-color: black;
   }
 }
 
